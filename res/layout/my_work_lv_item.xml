@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f4f4f4"
+    />
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#d1d1d1"
+        android:layout_gravity="center"
+        android:layout_weight="0.9"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView 
+        android:id="@+id/my_work_lv_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:text="舞台妆"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="#101119"
+        />
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#d1d1d1"
+        android:layout_gravity="center"
+        android:layout_weight="0.9"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>
+
+<view.MGridView
+    android:id="@+id/my_work_lv_item_gv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:numColumns="4"
+    android:horizontalSpacing="8dp"
+    android:verticalSpacing="3dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+     >
+</view.MGridView>
+
+</LinearLayout>
